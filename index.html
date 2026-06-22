@@ -3,101 +3,156 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>B4B Renewables | Solar & Battery for NI Homes</title>
+<title>B4B Renewables | Renewable Energy for Homes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--green:#004a47;--mint:#1effbb;--lime:#abff8a;--slate:#343a3d;--bg:#f7faf8}
+:root{--green:#004a47;--mint:#1effbb;--lime:#abff8a;--slate:#343a3d;--bg:#f7faf8;--line:#dbe5df}
 *{box-sizing:border-box} body{margin:0;font-family:Sora,Arial,sans-serif;color:var(--slate);background:var(--bg)}
-.page{max-width:1100px;margin:0 auto;padding:24px}
-.hero{background:linear-gradient(135deg,var(--green),#0a726a);color:#fff;border-radius:20px;padding:32px 36px;position:relative;overflow:hidden}
-.logo{max-width:280px;height:auto;margin-bottom:16px;border-radius:8px}
-.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800;color:var(--lime);margin-bottom:12px}
-.hero h1{margin:0;font-size:42px;line-height:1.1;font-weight:800}
-.hero p{margin:14px 0 0;font-size:18px;line-height:1.5;opacity:.96;max-width:850px}
-.cta-box{margin-top:20px;background:#fff;color:var(--slate);border-radius:14px;padding:18px 22px;display:inline-flex;align-items:center;gap:20px;border:2px solid var(--mint)}
-.cta-box strong{color:var(--green);font-size:16px;font-weight:700}
-.cta-box .contact{font-size:15px}
-.cta-box .contact b{color:var(--green);font-size:18px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}
-.card{background:#fff;border:1px solid #dbe5df;border-radius:16px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,.03);position:relative}
-.price{position:absolute;top:-14px;left:20px;background:linear-gradient(135deg,var(--mint),var(--lime));color:var(--green);font-size:14px;font-weight:800;border-radius:999px;padding:6px 14px}
-.card h2{margin:0 0:8px;font-size:19px;color:var(--green);font-weight:700}
-.spec{font-size:14px;line-height:1.5;margin:6px 0}
-.spec strong{color:var(--green);font-weight:600}
-.saving{margin:12px 0 0;padding-top:12px;border-top:1px solid #dbe5df;font-size:15px;font-weight:700;color:var(--green)}
-.benefits{margin:24px 0;background:#fff;border-radius:14px;padding:20px;border:1px solid #dbe5df}
-.benefits h3{margin:0 0 14px;font-size:18px;color:var(--green);font-weight:700}
-.benefits grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.benefits div{font-size:14px;line-height:1.4}
-.benefits div strong{color:var(--green)}
-.footer{margin:20px 0;padding:18px 22px;background:linear-gradient(135deg,rgba(30,255,187,.15),rgba(171,255,138,.2));border-radius:14px;border:1px solid rgba(0,74,71,.15);font-size:14px}
-.footer strong{color:var(--green);font-size:15px}
-.footer a{color:var(--green);text-decoration:none}
-@media max-width 900px{.cards{grid-template-columns:1fr}.hero h1{font-size:32px}.page{padding:16px}}
-@media print{body{background:#fff}.page{padding:0}}
+.page{max-width:1200px;margin:0 auto;padding:28px}
+.hero{background:linear-gradient(135deg,var(--green),#004a47 55%,#0a726a);color:#fff;border-radius:22px;padding:28px 34px;overflow:hidden}
+.logo{display:block;max-width:320px;width:100%;height:auto;margin-bottom:18px;border-radius:10px}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:var(--lime);margin-bottom:14px}
+.hero h1{margin:0;font-size:38px;line-height:1.08;max-width:900px}
+.hero p{margin:16px 0 0;font-size:17px;line-height:1.65;max-width:920px;opacity:.95}
+.contact{margin-top:18px;background:#fff;color:var(--slate);border-radius:16px;padding:18px 20px;border:1px solid var(--line)}
+.contact strong{color:var(--green)}
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(0,0,0,.04)}
+.card h2{margin:0 0 10px;font-size:22px;color:var(--green)}
+.tag{display:inline-block;background:linear-gradient(135deg,var(--mint),var(--lime));color:var(--green);font-size:12px;font-weight:800;border-radius:999px;padding:7px 11px;margin-bottom:14px}
+.metric{font-size:16px;line-height:1.6;margin-bottom:10px}.metric strong{color:var(--green)}
+ul{margin:0;padding-left:18px} li{margin:8px 0;line-height:1.5}
+.section{margin-top:18px}.section h3{color:var(--green);margin:0 0 12px;font-size:20px}
+.table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:14px;background:#fff;border:1px solid var(--line)}
+.table th,.table td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}.table th{background:#ecf8f4;color:var(--green)}
+.footer{margin-top:18px;border-radius:18px;padding:22px 24px;background:linear-gradient(135deg,rgba(30,255,187,.12),rgba(171,255,138,.18));border:1px solid rgba(0,74,71,.12)}
+.footer strong{color:var(--green)}.small{font-size:13px;line-height:1.6}.appshot{display:block;max-width:100%;width:100%;margin-top:14px;border-radius:14px;border:1px solid var(--line)}
+@media max-width 900px{.row{grid-template-columns:1fr}.hero h1{font-size:30px}.page{padding:16px}}
+@media print{body{background:#fff}.page{padding:0}.card,.footer,.hero{break-inside:avoid}}
 </style>
 </head>
 <body>
 <div class="page">
   <div class="hero">
-    <img class="logo" src="B4B Logo Green Background.svg" alt="B4B Renewables">
-    <div class="kicker">Northern Ireland Homes</div>
-    <h1>Slash Your Energy Bills</h1>
-    <p>Solar PV + battery storage tailored to your home. Cut electricity costs, store your own power, and never worry about rising prices again.</p>
-    <div class="cta-box">
-      <div><strong>FREE Home Assessment</strong><br><span class="contact">Get your tailored solar plan</span></div>
-      <div class="contact">
-        <b>02890 400 444</b><br>
-        info@b4brenewables.com
-      </div>
+    <img class="logo" src="B4B Logo Green Background.svg" alt="b4b renewables logo">
+    <div class="kicker">Empowering Home Owners with Renewable Energy</div>
+    <h1>Take control of rising energy costs.</h1>
+    <p>Solar PV and battery storage designed around your home, your roof space, and the way you use energy. At B4B Renewables, we make it straightforward for homeowners in Northern Ireland to reduce electricity bills, store more of their own power, and get a system designed to suit their property. Start with a free home assessment, and we’ll help build the right solution for your home.</p>
+    <div class="contact"><strong>Free Home Assessment</strong><br>The first step toward a tailored solar and battery system for your home.<br><br><strong>Speak to our domestic solar team today</strong><br>T: 02890 400 444<br>E: info@b4brenewables.com</div>
+  </div>
+
+  <div class="section">
+    <h3>Domestic solar packages</h3>
+    <p>Every home is different, so we size systems around roof space, household demand, and when energy is actually being used. All three packages use a complete Solis system for a connected solar, battery, and monitoring experience, with the SolisCloud app letting homeowners check generation, battery status, and system health at a glance.</p>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <div class="tag">£4,999</div>
+      <h2>Tailored for a typical 3-bed semi-detached home</h2>
+      <div class="metric"><strong>4.5kWp PV system</strong></div>
+      <div class="metric"><strong>3.6kW Solis S6 hybrid inverter</strong></div>
+      <div class="metric"><strong>5.1kWh Solis IntelliHome battery</strong></div>
+      <div class="metric"><strong>SolisCloud app</strong> for checking generation, battery status, and system health at a glance.</div>
+      <ul>
+        <li>Helps take control of rising energy costs.</li>
+        <li>Designed to make better use of the power you generate.</li>
+        <li>Easy to check performance from your phone.</li>
+      </ul>
+      <div class="metric"><strong>Best suited for:</strong> Homes with moderate roof space and everyday household energy use.</div>
+      <div class="metric"><strong>Estimated annual saving: £1,224</strong></div>
+      <div class="small">Savings depend on typical usage patterns, roof suitability, and final system design.</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">£6,499</div>
+      <h2>Balanced for stronger family energy use</h2>
+      <div class="metric"><strong>5.4kWp PV system</strong></div>
+      <div class="metric"><strong>3.6kW Solis S6 hybrid inverter</strong></div>
+      <div class="metric"><strong>10.2kWh Solis IntelliHome battery</strong></div>
+      <div class="metric"><strong>SolisCloud app</strong> for checking generation, battery status, and system health at a glance.</div>
+      <ul>
+        <li>Better for families looking for more control over bills.</li>
+        <li>Larger battery capacity supports more overnight and evening use.</li>
+        <li>A practical option where roof space and usage are both important.</li>
+      </ul>
+      <div class="metric"><strong>Best suited for:</strong> Homes with larger roof areas and more consistent daily energy demand.</div>
+      <div class="metric"><strong>Estimated annual saving: £1,843</strong></div>
+      <div class="small">Savings depend on typical usage patterns, roof suitability, and final system design.</div>
+    </div>
+
+    <div class="card">
+      <div class="tag">£7,999</div>
+      <h2>Higher capacity for larger homes and higher usage</h2>
+      <div class="metric"><strong>7.2kWp PV system</strong></div>
+      <div class="metric"><strong>Solis S6 hybrid inverter, size dependent</strong></div>
+      <div class="metric"><strong>16kWh Solis IntelliHome battery</strong></div>
+      <div class="metric"><strong>SolisCloud app</strong> for checking generation, battery status, and system health at a glance.</div>
+      <ul>
+        <li>Designed for higher household usage and stronger self-consumption.</li>
+        <li>Ideal where more stored energy is needed across the day and evening.</li>
+        <li>Good fit for homes with EV charging or heavier electricity demand.</li>
+      </ul>
+      <div class="metric"><strong>Best suited for:</strong> Larger homes with higher usage patterns and good roof capacity for a bigger array.</div>
+      <div class="metric"><strong>Estimated annual saving: £2,458</strong></div>
+      <div class="small">Savings depend on typical usage patterns, roof suitability, and final system design.</div>
     </div>
   </div>
 
-  <div class="cards">
-    <div class="card">
-      <div class="price">£4,999</div>
-      <h2>3-Bed Semi</h2>
-      <div class="spec"><strong>4.5kWp</strong> PV system</div>
-      <div class="spec"><strong>3.6kW</strong> Solis S6 hybrid inverter</div>
-      <div class="spec"><strong>5.1kWh</strong> IntelliHome battery</div>
-      <div class="spec"><strong>SolisCloud</strong> app monitoring</div>
-      <div class="saving">£1,224/year saved</div>
-    </div>
-
-    <div class="card">
-      <div class="price">£6,499</div>
-      <h2>Family Home</h2>
-      <div class="spec"><strong>5.4kWp</strong> PV system</div>
-      <div class="spec"><strong>3.6kW</strong> Solis S6 hybrid inverter</div>
-      <div class="spec"><strong>10.2kWh</strong> IntelliHome battery</div>
-      <div class="spec"><strong>SolisCloud</strong> app monitoring</div>
-      <div class="saving">£1,843/year saved</div>
-    </div>
-
-    <div class="card">
-      <div class="price">£7,999</div>
-      <h2>Larger Home</h2>
-      <div class="spec"><strong>7.2kWp</strong> PV system</div>
-      <div class="spec"><strong>Solis S6</strong> hybrid inverter</div>
-      <div class="spec"><strong>16kWh</strong> IntelliHome battery</div>
-      <div class="spec"><strong>SolisCloud</strong> app monitoring</div>
-      <div class="saving">£2,458/year saved</div>
-    </div>
+  <div class="section">
+    <h3>Why B4B</h3>
+    <table class="table">
+      <tr><th>Benefit</th><th>What it means for the homeowner</th></tr>
+      <tr><td>Engineer-led design</td><td>Clear advice, clear design, and a seamless installation and commissioning process.</td></tr>
+      <tr><td>One integrated system</td><td>Inverter, battery, and monitoring are designed to work together.</td></tr>
+      <tr><td>Ongoing aftercare</td><td>Simple handover, straightforward support, and long-term performance management.</td></tr>
+      <tr><td>Right-sized packages</td><td>Three clear options that suit real homes, not overspecified systems.</td></tr>
+    </table>
   </div>
 
-  <div class="benefits">
-    <h3>Why B4B?</h3>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-      <div><strong>Engineer-led design</strong><br>Clear advice, seamless install</div>
-      <div><strong>One integrated system</strong><br>Inverter + battery + monitoring</div>
-      <div><strong>Ongoing aftercare</strong><br>Simple support, long-term performance</div>
-      <div><strong>Right-sized packages</strong><br>Three clear options for real homes</div>
-    </div>
+  <div class="section">
+    <h3>Simple process</h3>
+    <table class="table">
+      <tr><th>Step</th><th>What happens</th></tr>
+      <tr><td>1. Survey</td><td>We assess your home, roof space, and energy needs.</td></tr>
+      <tr><td>2. Design</td><td>We build a tailored solar and battery system around how your home uses energy.</td></tr>
+      <tr><td>3. Install</td><td>We install, commission, and hand over the system, then provide aftercare support.</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h3>Monitoring and control</h3>
+    <table class="table">
+      <tr><th>What the homeowner sees</th><th>Why it matters</th></tr>
+      <tr><td>Real-time solar generation</td><td>See how much power the system is making during the day.</td></tr>
+      <tr><td>Battery state of charge</td><td>Track how much stored energy is available for later use.</td></tr>
+      <tr><td>Energy use and export</td><td>Understand when the home is using solar and when it is exporting.</td></tr>
+      <tr><td>System status and alerts</td><td>Spot faults or service issues early and keep performance visible.</td></tr>
+      <tr><td>Remote monitoring</td><td>Check the system from anywhere through SolisCloud.</td></tr>
+    </table>
+    <p>With a Solis S6 inverter and Solis IntelliHome battery, the homeowner gets one connected platform for production, storage, and system health, rather than a fragmented view across different brands.</p>
+  </div>
+
+  <div class="section card">
+    <h3>What’s included</h3>
+    <ul>
+      <li>Tailored system design based on your home.</li>
+      <li>Full installation by the B4B team.</li>
+      <li>Commissioning and system handover.</li>
+      <li>Aftercare support.</li>
+    </ul>
   </div>
 
   <div class="footer">
-    <strong>B4B Renewables Limited</strong> • Domestic solar & battery for NI homes<br>
-    <b>02890 400 444</b> • <a href="mailto:info@b4brenewables.com">info@b4brenewables.com</a> • <a href="https://b4brenewables.com">b4brenewables.com</a>
+    <strong>B4B Renewables Limited</strong><br>
+    Domestic solar PV and battery storage for homes in Northern Ireland.<br>
+    T: 02890 400 444<br>
+    E: info@b4brenewables.com<br>
+    W: b4brenewables.com<br>
+    <span class="small">Survey · Design · Install · Commission · Aftercare</span><br><br>
+    <img class="footer-logo" src="B4B Logo Green Background.svg" alt="b4b renewables logo">
   </div>
 </div>
 </body>
